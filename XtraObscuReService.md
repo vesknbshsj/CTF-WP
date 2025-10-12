@@ -1,16 +1,21 @@
-![Challenge description]（https://github.com/user-attachments/assets/cf570113-db3f-436f-8a31-94a84e3facf9）
+<img width="230" height="125" alt="image" src="https://github.com/user-attachments/assets/5968ceb1-6747-4907-9efc-aecdc79ee09c" />
+
 
 Hint: I wonder why I encrypt "SKR{" the encrypted message (base64) is all A's?
 
 Solution：  
 First, I connected to skrctf.me 3013.
 There are two options in the service - encrypt and decrypt.
-<img width="118" height="27" alt="image" src="https://github.com/user-attachments/assets/86de78b6-2618-4da3-baa5-6f25d621da70" />
+<img width="236" height="53" alt="image" src="https://github.com/user-attachments/assets/00a8511c-ae5b-4032-b694-b90041b55c76" />
+
 
 
 
 To verify how it behaves, I tried both ecrypt and decrypt with the plaintext ‘SKR{ ’ and the ciphertext ‘AAAAAA==’
-<img width="165" height="31" alt="image" src="https://github.com/user-attachments/assets/8a0ac901-7dcb-4a40-bd73-3d7056b3cf2d" />
+
+
+<img width="329" height="62" alt="image" src="https://github.com/user-attachments/assets/54832620-9fe2-4c8f-a346-6a0aacab641b" />
+
 
 Since A in Base64 corresponds to value 0, this means the raw ciphertext bytes are all 0x00.
 In Base64 encoding, the character A corresponds to the numeric value 0 (binary 000000).
@@ -18,7 +23,9 @@ When the encoded output is all A’s, it means the ciphertext bytes are all 0 (0
 
 Then, I asked ChatGPT what kind of encryption method this might be, and it told me it was XOR encryption
 
-<img width="151" height="57" alt="image" src="https://github.com/user-attachments/assets/15cd146f-9076-468e-b732-c0ce8f5ef4c6" />
+
+<img width="301" height="114" alt="image" src="https://github.com/user-attachments/assets/61d7aa8e-e11f-4709-a74d-94f193b3692c" />
+
 
 
 
@@ -35,6 +42,9 @@ In this challenge, the key happens to be the same as the plaintext (SKR{), so:
 So, based on the output, we know that the flag_byte = key_byte.
 That’s why when we encrypt ‘SKR{’ will get ‘AAAAAA==’
 Then, I started to decrypt with A’s
-<img width="151" height="71" alt="image" src="https://github.com/user-attachments/assets/5dbeb7b1-8a41-4f89-b62d-0c27691fa5d2" />
+
+
+<img width="301" height="141" alt="image" src="https://github.com/user-attachments/assets/5c7e61d2-c534-4f4b-bf3f-92d7f861fbbe" />
+
 
 After inserted many A’s. Finally, I got the flag.
