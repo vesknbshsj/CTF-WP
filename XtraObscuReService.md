@@ -68,7 +68,15 @@ How XOR works?
 
 
 Formula: cipher_byte = plaintext_byte XOR key_byte
+
+
+
+
 XOR means: same bits = 0, different bits = 1.
+
+
+
+
 In this challenge, the key happens to be the same as the plaintext (SKR{), so:
 0x53 XOR 0x53 = 0x00  
 0x4B XOR 0x4B = 0x00  
