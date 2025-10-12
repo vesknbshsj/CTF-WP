@@ -1,4 +1,4 @@
-<img width="159" height="129" alt="image" src="https://github.com/user-attachments/assets/cf570113-db3f-436f-8a31-94a84e3facf9" />
+![Challenge description]（https://github.com/user-attachments/assets/cf570113-db3f-436f-8a31-94a84e3facf9）
 
 Hint: I wonder why I encrypt "SKR{" the encrypted message (base64) is all A's?
 
