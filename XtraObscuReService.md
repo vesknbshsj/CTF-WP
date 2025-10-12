@@ -15,10 +15,20 @@ There are two options in the service - encrypt and decrypt.
 
 
 
+
+
+
+
+
 To verify how it behaves, I tried both ecrypt and decrypt with the plaintext ‘SKR{ ’ and the ciphertext ‘AAAAAA==’
 
 
 <img width="658" height="124" alt="image" src="https://github.com/user-attachments/assets/c112945a-b773-4b3e-842a-8d814df85356" />
+
+
+
+
+
 
 
 
@@ -49,6 +59,10 @@ Then, I asked ChatGPT what kind of encryption method this might be, and it told 
 
 
 
+
+
+
+
 How XOR works?
 
 
@@ -60,6 +74,15 @@ In this challenge, the key happens to be the same as the plaintext (SKR{), so:
 0x4B XOR 0x4B = 0x00  
 0x52 XOR 0x52 = 0x00  
 0x7B XOR 0x7B = 0x00  
+
+
+
+
+
+
+
+
+
 
 
 
