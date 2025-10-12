@@ -49,4 +49,4 @@ Then, I started to decrypt with A’s
 
 
 <img width="602" height="282" alt="image" src="https://github.com/user-attachments/assets/ceff8525-a66f-413a-a654-289d1721d425" />
-After inserted many A’s. Finally, I got the flag.
+After inserted many A’s，I finally got the flag.
