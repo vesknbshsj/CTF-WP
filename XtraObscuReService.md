@@ -48,7 +48,11 @@ Then, I asked ChatGPT what kind of encryption method this might be, and it told 
 
 
 
+
 How XOR works?
+
+
+
 Formula: cipher_byte = plaintext_byte XOR key_byte
 XOR means: same bits = 0, different bits = 1.
 In this challenge, the key happens to be the same as the plaintext (SKR{), so:
@@ -56,6 +60,9 @@ In this challenge, the key happens to be the same as the plaintext (SKR{), so:
 0x4B XOR 0x4B = 0x00  
 0x52 XOR 0x52 = 0x00  
 0x7B XOR 0x7B = 0x00  
+
+
+
 
 
 So, based on the output, we know that the flag_byte = key_byte.
