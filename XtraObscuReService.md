@@ -13,10 +13,18 @@ There are two options in the service - encrypt and decrypt.
 
 
 
+
+
 To verify how it behaves, I tried both ecrypt and decrypt with the plaintext ‘SKR{ ’ and the ciphertext ‘AAAAAA==’
 
 
 <img width="658" height="124" alt="image" src="https://github.com/user-attachments/assets/c112945a-b773-4b3e-842a-8d814df85356" />
+
+
+
+
+
+
 
 
 
@@ -28,6 +36,13 @@ Then, I asked ChatGPT what kind of encryption method this might be, and it told 
 
 
 <img width="602" height="228" alt="image" src="https://github.com/user-attachments/assets/a75a22ad-254c-492e-9918-c3577dc1c295" />
+
+
+
+
+
+
+
 
 
 
@@ -49,4 +64,8 @@ Then, I started to decrypt with A’s
 
 
 <img width="602" height="282" alt="image" src="https://github.com/user-attachments/assets/ceff8525-a66f-413a-a654-289d1721d425" />
+
+
+
+
 After inserted many A’s，I finally got the flag.
