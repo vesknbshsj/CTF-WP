@@ -1,0 +1,1 @@
+This folder was added by an automated assistant on 2025-10-20 to reserve the SKR-CTF directory.
